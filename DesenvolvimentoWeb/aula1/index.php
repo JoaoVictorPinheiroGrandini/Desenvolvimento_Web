@@ -1,3 +1,17 @@
+<?php
+    $dadosFuncionario = array (
+        array('nome' => 'João', 'idade' => 23, 'cidade' => 'Nova Friburgo'),
+        array('nome' => 'José', 'idade' => 25, 'cidade' => 'Nova Friburgo'),
+        array('nome' => 'Maria', 'idade' => 22, 'cidade' => 'Bom Jardim')
+    )
+    /*$soma = function(int $a,int $b):int {
+        return $a + $b;
+    };
+    echo"<br/>";
+    var_dump($soma(5,6));
+*/
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +21,14 @@
     <title>Document</title>
 </head>
 <body>
-
+    <table>
+        <?php
+            $tabel = "<tr><th>Nome</th><th>Idade</th><th>Cidade</th></tr>";
+            for($i = 0; $i < count($dadosFuncionario); $i++){
+                $tabel .="<tr><td>".$dadosFuncionario[$i]['nome']."</td><td>".$dadosFuncionario[$i]['idade']."</td><td>".$dadosFuncionario[$i]['cidade']."</td></tr>";
+            };
+            echo $tabel;
+        ?>
+    </table>
 </body>
-</html>
+</html> 
