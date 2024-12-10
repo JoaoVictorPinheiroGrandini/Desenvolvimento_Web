@@ -76,7 +76,7 @@ function criarSelect($chave, $array){
 //função para criar button, submit e reset  PAREI AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
 function criarBotao($chave, $array){
-
+    
 }
 
 function criarFormulario($array){
